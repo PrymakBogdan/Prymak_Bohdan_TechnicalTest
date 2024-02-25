@@ -13,9 +13,9 @@ static int activeThreads = 0;
 
 void makeList(std::stack <std::string> & list, path currentPath, path & fileDirectory, std::string & fileName)
 {
-  try 
+  try
   {
-    for (const auto& entry : directory_iterator(currentPath)) 
+    for (const auto& entry : directory_iterator(currentPath))
     {
       path dir = entry.path();
 
@@ -71,7 +71,7 @@ std::string findFile(std::string & fileName)
     rootList.pop();
   }
 
-  for (auto& thread : threads) 
+  for (auto& thread : threads)
       thread.join();
 
   return fileDirectory.string();

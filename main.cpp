@@ -13,6 +13,6 @@ int main()
     std::cout<<"File not found!"<<std::endl;
   else
     std::cout<<"File path: "<< pathToFile<<std::endl;
-    
+
   return 0;
 }
