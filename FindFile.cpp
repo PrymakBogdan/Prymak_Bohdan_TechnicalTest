@@ -7,7 +7,6 @@
 #include <mutex>
 #include <condition_variable>
 using namespace std::filesystem;
-using namespace std::this_thread;
 std::mutex mtx;
 std::condition_variable cv;
 static int activeThreads = 0;
